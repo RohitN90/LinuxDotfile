@@ -1,0 +1,56 @@
+[user]
+	name = rohitvardhan
+	email = rohitvardhan88@gmail.com
+
+[url "https://github.com:"]
+  insteadOf = "gh:"
+
+[url "https://github.com:RohitN90/"]
+  insteadOf = "gr:"
+[core]
+  compression = 9
+  whitespace = error
+  preloaderindex = true
+	pager = diff-so-fancy | less --tabs=4 -RF
+	editor = code --wait
+
+[advice]
+  addEmptypathspec = false
+  pushNonFastForward = false
+  statusHints = false
+
+[init]
+  defaultBranch = dev
+
+[status]
+  branch = true
+  showStash = true
+  showUntrackedFiles = all
+
+[diff]
+  context = 3
+  renames = copies
+  interHunkContext = 10
+
+[color "diff"]
+	meta = 11
+	frag = magenta bold
+  context = white
+	whitespace = red reverse
+	old = red bold
+	func = 146 bold
+	commit = yellow bold
+	new = green bold
+
+[diff-so-fancy]
+	markEmptyLines = false
+	changeHunkIndicators = false
+[interactive]
+	diffFilter = diff-so-fancy --patch
+[color]
+	ui = true
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
